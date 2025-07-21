@@ -13,12 +13,12 @@ function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <motion.div className="flex md:block md:pl-60 items-center justify-center md:pt-10 md:pb-8 "
+      <motion.div className="flex md:block  md:pl-60 items-center justify-center md:pt-10 md:pb-8 "
        initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        <img className='w-14 h-16 ' src="./logo.png" alt="" />
+        <img className='w-14 h-16 mt-6 md:mt-0 ' src="./logo.png" alt="" />
       </motion.div>
       <div className="flex flex-col md:flex-row  justify-between   md:px-0 py-2 md:py-0">
         {/* left side  */}
@@ -47,7 +47,7 @@ function Home() {
       My Resume
     </InteractiveHoverButton>
   </a>
-            <a href="#Contact">
+            <a href="#contact">
     <InteractiveHoverButton className='border border-[#c470db]'>
       Hire me
     </InteractiveHoverButton>
