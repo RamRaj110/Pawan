@@ -42,23 +42,10 @@ function About() {
       <motion.div variants={fadeInUp}>
         <h3 className="text-2xl font-semibold mb-2">Hi, I'm Pawan 👋</h3>
         <p className="text-gray-300 leading-relaxed">
-          I have completed my B.Tech in Electronics and Communication Engineering from GEC, Vaishali. I specialize in building responsive and modern web applications using React, Tailwind CSS, and JavaScript. I've also worked on Python and Machine Learning projects, participated in open-source programs like C4GT, and recently started learning SAP ABAP.
+          I have completed my B.Tech in Electronics and Communication Engineering from GEC, Vaishali. I specialize in building responsive and modern web applications using React, Tailwind CSS, and JavaScript. I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you'll find me exploring new technologies or working on freelance projects.
+
         </p>
 
-        <div className="mt-6">
-          <h4 className="text-xl font-medium mb-2">Skills:</h4>
-          <ul className="flex flex-wrap gap-3 text-sm text-gray-300">
-            {["HTML", "CSS", "JavaScript", "React", "Tailwind", "SAP ABAP", "C++"].map((skill, idx) => (
-              <motion.li
-                key={idx}
-                className="bg-gray-700 px-3 py-1 rounded-full"
-                variants={fadeInUp}
-              >
-                {skill}
-              </motion.li>
-            ))}
-          </ul>
-        </div>
       </motion.div>
 
       <motion.div className="mt-12" variants={fadeInUp}>
@@ -72,7 +59,7 @@ function About() {
             </p>
           </motion.div>
           <motion.div variants={fadeInUp}>
-            <h5 className="text-lg font-semibold">Frontend Developer (Freelance)</h5>
+            <h5 className="text-lg font-semibold">Frontend Developer at zidio</h5>
             <span className="text-gray-400 text-sm">Present</span>
             <p className="text-gray-300 text-sm">
               Built and delivered modern web apps using React, Tailwind CSS, and integrated APIs.

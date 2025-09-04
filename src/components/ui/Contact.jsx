@@ -84,20 +84,20 @@ function Contact() {
 
   return (
     <div>
-      <section className="px-4 py-4 bg-gray-900" id="contact">
+      <section className="min-h-screen flex items-center justify-center bg-gray-900 " id="contact">
         <NeonGradientCard>
-          <div className="max-w-8xl mx-auto pt-4">
+          <div className="max-w-10xl mx-auto pt-4">
             <motion.h2
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              className="text-4xl font-bold text-white text-center mb-16"
+              className="text-3xl  md:text-4xl font-bold text-white text-center md:mb-16"
             >
               Get In Touch
             </motion.h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-4">
               {/* Contact Info */}
               <div className="space-y-8">
                 {[
@@ -114,7 +114,7 @@ function Contact() {
                     variants={fadeUp}
                     className="flex items-center space-x-4"
                   >
-                    <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-600 flex items-center justify-center">
                       <item.Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>

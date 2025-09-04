@@ -1,4 +1,3 @@
-// src/projectsData.js
 export const projects = [
   {
     id: 1,
@@ -21,13 +20,5 @@ export const projects = [
     live: "https://currency-converter-iota-brown.vercel.app/",
     code: "https://github.com/RamRaj110/Currency-Converter/deployments",
   },
-  {
-    id: 4,
-    img: "/images/project3.jpg",
-    description: "Enhance your images with AI.",
-    live: "https://pic-enhance-eqc6.vercel.app/",
-    code: "https://github.com/RamRaj110/PicEnhance",
-  },
-  
  
 ];

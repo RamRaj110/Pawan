@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import { projects } from "./ProjectData";
+import  {projects}  from "./ProjectData";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 function Projects() {
-  const [showAll, setShowAll] = useState(false);
-  const visibleProjects = showAll ? projects : projects.slice(0, 3);
+  const [project,setProject]=useState(projects)
 
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
@@ -51,10 +50,12 @@ function Projects() {
     >
       <div className="flex items-center mb-6">
         <h2 className="text-4xl font-medium text-white mr-4">Projects</h2>
+        <div className="flex-grow border-t border-gray-700 " />
+
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {visibleProjects.map((project) => (
+        {project.map((project) => (
           <motion.div
             key={project.id}
             className="relative rounded-xl p-[2px]"
@@ -94,19 +95,80 @@ function Projects() {
           </motion.div>
         ))}
       </div>
-
-      {projects.length > 3 && (
-        <div className="flex justify-center mt-6">
-          <InteractiveHoverButton
-            onClick={() => setShowAll((prev) => !prev)}
-            className="px-4 py-2 border text-black font-semibold rounded-md"
+      <div className="flex justify-center mt-8">
+        <InteractiveHoverButton>
+          <a
+            href="
+            https://github.com/RamRaj110?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
           >
-            {showAll ? "View Less" : "View More"}
-          </InteractiveHoverButton>
-        </div>
-      )}
+            View More on GitHub
+          </a>
+        </InteractiveHoverButton>
+      </div>
+
     </motion.section>
   );
 }
 
-export { Projects };
+export default Projects;
+
+
+
+// import ThreeDCard from '../magicui/threed-card';
+
+// function Projects() {
+//   return (
+//     <div>
+     
+//      <ThreeDCard
+//       maxRotation={15}
+//       glowOpacity={0.3}
+//       shadowBlur={40}
+//       parallaxOffset={60}
+//       transitionDuration="0.8s"
+//       backgroundImage="/background.jpg"
+//       enableGlow={true}
+//       enableShadow={true}
+//       enableParallax={true}
+//       className="w-96 h-80"
+//     >
+       
+//       <img
+//   src={projects.img}
+//   alt="project"
+//   className="w-full h-40 object-cover mb-4 rounded"
+// />
+// <p className="text-gray-200 mb-4">{projects.description}</p>
+// <div className="flex justify-between">
+//   <InteractiveHoverButton>
+//     <a
+//       href={projects.live}
+//       target="_blank"
+//       rel="noreferrer"
+//     >
+//       Live
+//     </a>
+//   </InteractiveHoverButton>
+//   <InteractiveHoverButton>
+//     <a
+//       href={projects.code}
+//       target="_blank"
+//       rel="noreferrer"
+//     >
+//       GitHub
+//     </a>
+//   </InteractiveHoverButton>
+// </div>
+    
+//     </ThreeDCard>
+
+//     </div>
+//   );
+// }
+
+// export default Projects;
+
+
+

@@ -3,7 +3,8 @@ import React, { useRef, useEffect } from "react";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { User } from "lucide-react";
 import { motion, useInView, useAnimation } from "framer-motion";
-
+import { SiPnpm,SiTypescript  } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 import {
   FaJs,
   FaGithub,
@@ -12,8 +13,7 @@ import {
   FaCss3Alt,
   FaNode,
 } from "react-icons/fa";
-import { SiPnpm,SiTypescript  } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
+
 
 function Icon() {
   const containerRef = useRef(null);
@@ -48,7 +48,8 @@ function Icon() {
           <FaGithub size={32} />
         </div>
         <div className="absolute inset-0 -z-10 blur-[60px] rounded-full opacity-50 bg-gradient-to-tr from-blue-500 via-cyan-400 to-yellow-400 w-20 h-20 mx-auto" />
-        <div ref={leftRefs[2]} ><SiTypescript  size={34} color="#3178c6"  /></div>
+        <div ref={leftRefs[2]} ><SiTypescript  size={32} color="#3178c6" className="bg-white rounded-sm
+        "  /></div>
       </div>
 
       {/* Center person icon with neon glow */}
@@ -62,7 +63,6 @@ function Icon() {
       {/* Right icons */}
       <div className="absolute right-0 top-1/2 flex flex-col gap-8 -translate-y-1/2 z-10">
         <div ref={rightRefs[0]}><FaReact size={32} color="#61DBFB" /></div>
-      
         <div ref={rightRefs[1]}><RiTailwindCssFill  size={32} color="#1572b6" className="border bg-white rounded-full " /></div>
         <div ref={rightRefs[2]}><SiPnpm  size={30} color="#e34c26" /></div>
         

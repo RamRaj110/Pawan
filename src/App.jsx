@@ -3,10 +3,11 @@ import { Home } from "@/components/ui/Home";
 import { Nav } from "@/components/ui/Nav";
 import { Icon } from "@/components/ui/Icon";
 import { Skills } from "@/components/ui/Skills";
-import { Projects } from "@/components/ui/Projects";
+import  Projects  from "@/components/ui/Projects";
 import { About } from "@/components/ui/About";
 import { Contact } from "@/components/ui/Contact";
 import { Meteors } from "@/components/magicui/meteors";
+import Footer from "./components/ui/Footer";
 
 import {
     AnimatedSpan,
@@ -16,7 +17,7 @@ import {
 
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
 
   useEffect(() => {
@@ -75,7 +76,7 @@ if (loading) {
   return (
     <div className="relative flex flex-col min-h-screen bg-gray-900">
       {/* Background Meteors */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 min-w-full min-h-full overflow-hidden">
         <Meteors />
       </div>
 
@@ -87,14 +88,8 @@ if (loading) {
         <Projects />
         <About />
         <Contact />
-        <footer className="mt-15">
-          <div className="text-center text-gray-400 py-4">
-            &copy; {new Date().getFullYear()} Mr.Pawan. All rights reserved.
-          </div>
-        </footer>
+        <Footer/>
       </div>
-
-      {/* Fixed Bottom Navigation */}
       <Nav />
     </div>
   );

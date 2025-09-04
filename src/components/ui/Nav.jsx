@@ -4,7 +4,7 @@ import { Home, LinkedinIcon, GithubIcon, TwitterIcon, MailIcon} from "lucide-rea
 
 function Nav() {
   return (
-    <div className="fixed bottom-12 w-full flex justify-center text-white z-50">
+    <div className="fixed bottom-12 left-1/2 -translate-x-1/2 flex justify-center text-white z-50">
       <Dock className="gap-8">
         <DockIcon>
           <a href="#home" className="block">
