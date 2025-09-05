@@ -17,11 +17,11 @@ import {
 
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 6000); 
+    const timer = setTimeout(() => setLoading(false),6000); 
     return () => clearTimeout(timer);
   }, []);
 
