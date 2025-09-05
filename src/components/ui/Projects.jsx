@@ -42,7 +42,7 @@ function Projects() {
   return (
     <motion.section
       id="projects"
-      className="h-[95%] w-[75%]"
+      className="h-[95%] w-[75%] pt-8 md:pt-0 lg:pt-0"
       ref={sectionRef}
       initial="hidden"
       animate={controls}

@@ -84,7 +84,7 @@ function Contact() {
 
   return (
     <div>
-      <section className="min-h-[85vh] w-md lg:w-full md:w-full lg:min-h-screen md:min-h-screen flex items-center justify-center bg-gray-900 " id="contact">
+      <section className="min-h-[85vh] w-sm lg:w-full md:w-full lg:min-h-screen md:min-h-screen flex items-center justify-center bg-gray-900 " id="contact">
         <NeonGradientCard >
           <div className="w-[100%] 0vh] lg:max-w-10xl md:max-w-10xl mx-auto pt-4">
             <motion.h2
