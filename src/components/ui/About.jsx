@@ -40,8 +40,8 @@ function About() {
       </motion.div>
 
       <motion.div variants={fadeInUp}>
-        <h3 className="text-2xl font-semibold mb-2">Hi, I'm Pawan 👋</h3>
-        <p className="text-gray-300 leading-relaxed">
+        <h3 className="text-2xl font-semibold mb-2 text-center">Hi, I'm Pawan 👋</h3>
+        <p className="text-gray-300 leading-relaxed ">
           I have completed my B.Tech in Electronics and Communication Engineering from GEC, Vaishali. I specialize in building responsive and modern web applications using React, Tailwind CSS, and JavaScript. I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you'll find me exploring new technologies or working on freelance projects.
 
         </p>

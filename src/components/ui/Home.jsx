@@ -9,7 +9,7 @@ function Home() {
   return (
     <motion.section
       id="#home"
-      className=" md:min-h-[95vh] md:min-w-[80%] pt-8"
+      className="min-h-screen  md:min-h-[95vh] md:min-w-[80%] pt-8"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -29,13 +29,13 @@ function Home() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        <img className='w-[80px] mt-6 md:mt-0 ' src="./logo1.png" alt="My logo" />
+        <img className='w-24  md:mt-0 ' src="./logo1.png" alt="My logo" />
       </motion.div>
 
-          <h1 className="text-2xl tracking-wider text-white font-semibold md:pb-4">
+          <h1 className="text-xl md:text-2xl lg:text-3xltracking-wider text-white font-semibold md:pb-4">
             Hello, I'm Pawan <br /> I'm a
           </h1>
-          <h1 className=' tracking-wider   text-3xl  lg:text-4xl font-bold'>
+          <h1 className=' tracking-wider   text-4xl p-6 md:p-1 lg:p-1 md:text-5xl lg:text-4xl font-bold'>
            <FlipWords
         words={["Fronted Developer", "React Developer", "Web Developer","Freelancer"]}
         duration={2500}
@@ -61,7 +61,7 @@ function Home() {
         </motion.div>
 
         {/* right side */}
-        <motion.div className="w-full md:w-1/2 flex items-center justify-center relative "
+        <motion.div className="w-full pt-8 md:pt-0 lg:pt-0 lg:w-1/2 md:w-1/2 flex items-center justify-center relative "
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}

@@ -84,9 +84,9 @@ function Contact() {
 
   return (
     <div>
-      <section className="min-h-screen flex items-center justify-center bg-gray-900 " id="contact">
-        <NeonGradientCard>
-          <div className="max-w-10xl mx-auto pt-4">
+      <section className="min-h-[85vh] w-md lg:w-full md:w-full lg:min-h-screen md:min-h-screen flex items-center justify-center bg-gray-900 " id="contact">
+        <NeonGradientCard >
+          <div className="w-[100%] 0vh] lg:max-w-10xl md:max-w-10xl mx-auto pt-4">
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -127,10 +127,10 @@ function Contact() {
 
               {/* Contact Form */}
               <form onSubmit={handleSubmit} className="space-y-6">
-                <input 
-                  type="checkbox" 
-                  name="botcheck" 
-                  className="hidden" 
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  className="hidden"
                   style={{ display: 'none' }}
                 />
 
@@ -184,7 +184,7 @@ function Contact() {
                     placeholder="Your Message"
                     required
                     rows={4}
-                    className="w-full px-4 py-2 text-white rounded-lg bg-gray-700 border border-gray-600 outline-none transition-colors"
+                    className="w-full h-[150px] px-4 py-2 text-white rounded-lg bg-gray-700 border border-gray-600 outline-none transition-colors"
                   />
                 </motion.div>
 
@@ -205,9 +205,8 @@ function Contact() {
                   <button
                     type="submit"
                     disabled={status.loading}
-                    className={`w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2 ${
-                      status.loading ? 'opacity-70 cursor-not-allowed' : ''
-                    }`}
+                    className={`w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2 ${status.loading ? 'opacity-70 cursor-not-allowed' : ''
+                      }`}
                   >
                     <Send className="w-5 h-5" />
                     <span>{status.loading ? 'Sending...' : 'Send Message'}</span>
