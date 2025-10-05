@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import  {projects}  from "./ProjectData";
+import  {projects}  from "../../lib/ProjectData";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 import { motion, useInView, useAnimation } from "framer-motion";
